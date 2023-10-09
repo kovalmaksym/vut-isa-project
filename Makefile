@@ -17,7 +17,7 @@ CC = gcc
 # 	compiler flags:
 #  		-g     - this flag adds debugging information to the executable file
 #  		-Wall  - this flag is used to turn on most compiler warnings
-CFLAGS = -g -Wall -Iinclude
+CFLAGS = -g  -Iinclude -std=c99 -pedantic
 
 # Source file
 SRC = src/main.c
