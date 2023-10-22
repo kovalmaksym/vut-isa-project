@@ -11,16 +11,16 @@ LOGIN = xkoval20
 ARCH = tar
 
 # Compiler
-CC = gcc
+CC = g++
 
 # Compiler flags
 # 	compiler flags:
 #  		-g     - this flag adds debugging information to the executable file
 #  		-Wall  - this flag is used to turn on most compiler warnings
-CFLAGS = -g  -Iinclude -std=c99 -pedantic
+CFLAGS = -std=c++11 -g -Wall
 
 # Source file
-SRC = src/main.c
+SRC = src/main.cpp
 
 # Output executable
 OUTPUT = dns
@@ -28,8 +28,8 @@ OUTPUT = dns
 # Additions
 ADDITIONS = Makefile
 
-# LIST = PointN.cpp NystromN.cpp FlyingBall.cpp Wind.cpp Test.cpp
-# HEADERS = PointN.h NystromN.h FlyingBall.h Wind.h Test.h
+# LIST = main.hpp
+HEADERS = main.hpp
 
 all: $(OUTPUT)
 
