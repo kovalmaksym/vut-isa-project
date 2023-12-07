@@ -17,7 +17,7 @@ CC = gcc
 # 	compiler flags:
 #  		-g     - this flag adds debugging information to the executable file
 #  		-Wall  - this flag is used to turn on most compiler warnings
-CFLAGS = -std=c99 -g -Wall -Wno-pragma-pack
+CFLAGS = -std=c99 -g -Wall -pedantic
 
 # Source file
 SRC = src/dns.c

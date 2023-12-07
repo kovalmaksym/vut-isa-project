@@ -18,6 +18,11 @@
 #include <string.h>
 #include <sys/socket.h>
 #include <unistd.h>
+
+//CHANGE
+#include <sys/time.h>
+
+
 #pragma pack(1)
 
 // Flags, port, server name and address name
@@ -106,6 +111,9 @@ enum DNSQclasses
 #define DNS_MAX_LENGHT 512
 #define ANSWER_YES "Yes"
 #define ANSWER_NO "No"
+
+// CHANGE
+#define h_addr h_addr_list[0]
 
 // Buffers
 char servername[BUFF_MAX_LEN];
